@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -17,7 +18,15 @@ class _HomeState extends State<Home> {
       ),
       body: Container(
         padding: const EdgeInsets.all(16),
-        child: const Text("Home"),
+        child: Column(
+          children: [
+            const Text("Character List"),
+            FilledButton(
+              onPressed: () {},
+              child: const Text("Create New"),
+            )
+          ],
+        ),
       ),
     );
   }
