@@ -12,8 +12,18 @@ class AppColors {
 }
 
 ThemeData primaryTheme = ThemeData(
-  //seed
+  //seed color
   colorScheme: ColorScheme.fromSeed(
     seedColor: AppColors.primaryColor,
   ),
+
+  // scaffold color
+  scaffoldBackgroundColor: AppColors.secondaryAccent,
+
+  // app bar theme color
+  appBarTheme: AppBarTheme(
+      backgroundColor: AppColors.secondaryColor,
+      foregroundColor: AppColors.textColor,
+      surfaceTintColor: Colors.transparent,
+      centerTitle: true),
 );
